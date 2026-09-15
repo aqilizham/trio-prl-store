@@ -272,6 +272,7 @@ h2 { color:var(--moss); font-size:clamp(42px,4vw,64px); line-height:.98; margin:
 .mobile-menu-overlay { align-items:stretch; background:rgba(16,36,59,.42); display:flex; inset:0; justify-content:flex-start; position:fixed; z-index:20; }
 .mobile-menu-panel { animation:drawerIn .25s ease both; background:var(--paper); box-shadow:10px 0 40px rgba(16,36,59,.18); display:flex; flex-direction:column; height:100%; padding:22px 24px; width:min(360px,88%); }
 .mobile-menu-top { align-items:center; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; margin-bottom:18px; padding-bottom:20px; }
+.mobile-menu-panel .icon-button { display:grid; place-items:center; padding:6px; }
 .mobile-menu-top .wordmark-logo { height:38px; width:38px; }
 .mobile-menu-panel > a { align-items:center; border-bottom:1px solid var(--line); color:var(--moss); display:flex; font-family:Georgia,serif; font-size:21px; justify-content:space-between; min-height:58px; text-decoration:none; }
 .mobile-menu-panel > a:hover { color:var(--copper); }
@@ -281,6 +282,8 @@ h2 { color:var(--moss); font-size:clamp(42px,4vw,64px); line-height:.98; margin:
 .cart-line { position:relative; padding-right:30px; }
 .checkout-back { align-items:center; background:none; color:var(--muted); display:inline-flex; font-size:12px; gap:7px; margin-bottom:24px; padding:0; }
 .checkout-back:hover { color:var(--moss); }
+.product-info { cursor:pointer; }
+.product-info:focus-visible { outline:2px solid var(--copper); outline-offset:4px; }
 .mobile-bag-dock { display:none; }
 
 @media (max-width:600px) {
