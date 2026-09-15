@@ -21,6 +21,7 @@ export const categories = [
 
 const asset = (file: string) => `${import.meta.env.BASE_URL}images/${file}`
 export const brandLogo = asset('trioprl-logo-crop.png')
+export const heroImage = asset('trioprl-hero-editorial.png')
 
 export const products: Product[] = [
   { id: 'oxford-01', name: 'Kemeja Classic Oxford', price: 189, category: 'shirts', tone: 'Navy · brushed cotton', image: asset('trio-fleece-source.jpg'), label: 'Signature edit', description: 'A classic button-down with a neat collar, substantial cotton and an easy everyday fit.', sizes: ['S', 'M', 'L', 'XL'] },
