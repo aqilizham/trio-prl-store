@@ -266,3 +266,27 @@ h2 { color:var(--moss); font-size:clamp(42px,4vw,64px); line-height:.98; margin:
   .product-grid { gap:34px 12px; }
   .product-image { aspect-ratio:4/5; height:auto; }
 }
+
+/* Interaction parity with the Seroja storefront. */
+.menu-toggle { display:none; }
+.mobile-menu-overlay { align-items:stretch; background:rgba(16,36,59,.42); display:flex; inset:0; justify-content:flex-start; position:fixed; z-index:20; }
+.mobile-menu-panel { animation:drawerIn .25s ease both; background:var(--paper); box-shadow:10px 0 40px rgba(16,36,59,.18); display:flex; flex-direction:column; height:100%; padding:22px 24px; width:min(360px,88%); }
+.mobile-menu-top { align-items:center; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; margin-bottom:18px; padding-bottom:20px; }
+.mobile-menu-top .wordmark-logo { height:38px; width:38px; }
+.mobile-menu-panel > a { align-items:center; border-bottom:1px solid var(--line); color:var(--moss); display:flex; font-family:Georgia,serif; font-size:21px; justify-content:space-between; min-height:58px; text-decoration:none; }
+.mobile-menu-panel > a:hover { color:var(--copper); }
+.mobile-menu-note { background:#ebe6dc; color:#72766f; font-family:Georgia,serif; font-size:16px; font-style:italic; margin-top:auto; padding:17px; }
+.remove-line { align-self:flex-start; background:none; color:var(--muted); padding:4px; }
+.remove-line:hover { color:var(--wine); }
+.cart-line { position:relative; padding-right:30px; }
+.checkout-back { align-items:center; background:none; color:var(--muted); display:inline-flex; font-size:12px; gap:7px; margin-bottom:24px; padding:0; }
+.checkout-back:hover { color:var(--moss); }
+.mobile-bag-dock { display:none; }
+
+@media (max-width:600px) {
+  .menu-toggle { display:grid; padding:5px 10px 5px 0; place-items:center; }
+  .mobile-bag-dock { align-items:center; background:var(--moss); bottom:calc(9px + env(safe-area-inset-bottom)); box-shadow:0 7px 23px rgba(16,36,59,.22); color:#fff; display:flex; font-size:11px; gap:8px; justify-content:space-between; left:12px; min-height:48px; padding:0 15px; position:fixed; right:12px; z-index:7; }
+  .mobile-bag-dock span { color:#e4d4b6; margin-left:auto; }
+  .mobile-menu-panel { padding:20px 22px; }
+  .checkout-back { margin-bottom:20px; }
+}
